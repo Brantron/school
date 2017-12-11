@@ -1,0 +1,15 @@
+<nav>
+  <ul>
+    <li><a href="https://github.com/Brantron" alt="Brandon Lawrence's Github">My Github</a></li>
+   {% for item in site.top -%}
+      <li><a href="{{ item.url }}" alt="{{ item.title }}">{{ item.title }}</a></li>
+   {% endfor -%}
+    <li class="top">Pages
+      <ul>
+       {% for item in site.docs -%}
+          <li><a href="{{ item.url }}" alt="{{ item.title }}">{{ item.title }}</a></li>
+       {% endfor -%}
+     </ul>
+   </li>
+   </ul>
+</nav>

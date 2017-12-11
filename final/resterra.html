@@ -1,0 +1,20 @@
+---
+layout: default
+title: Resterra Consulting
+link: http://resterraconsulting.com/
+description: A website for Resterra Consulting.
+keywords: Business Consulting, Consulting, Resterra, Resterra Consulting
+imagewidth: 300
+imageheigth: 190
+---
+{% capture words %}
+<p>Resterra Consulting was the first time I had ever taken the lead on a project. I led 4 other engineers in a 48 hour build of the frontend and backend applications for this non profit. The frontend was ReactJS and the backend was Runy on Rails.</p>
+{% endcapture %}
+
+{% include pageintro.html header="My Time working on Resterra Consulting" words=words %}
+
+{% capture lessons %}
+<p>This project really taught me the importance of white boarding to work out an application. We spent about 30 minutes talking through what we thought the application needed, how best to start, and who should be doing what. In the second day, I was finding it hard to hold the object relationships in my head so we wrote them all out on a whiteboard. This was very usfeul for the team, but more importantly, it allowed us to see a major oversight which cost of hours of unnecessary work by creating inefficient relationships between objects.</p>
+{% endcapture %}
+
+{% include lessonslearned.html header="Lessons Learned" text=lessons %}

@@ -1,0 +1,21 @@
+---
+layout: default
+description: A website for Haystax
+title: Haystax Technology
+link: https://haystax.com/
+keywords: Haystax, Business Intelligence, Intelligence, Hystax Intelligence
+imagewidth: 300
+imageheigth: 190
+---
+
+{% capture words %}
+<p>Haystax was a project we did at Top Shelf. This website always seemed to need some random maintenance work done and we were happy to do it since it was always easy, and fulfilled a maintenance contract.</p>
+{% endcapture %}
+
+{% include pageintro.html header="My Time working on Haystax" words=words %}
+
+{% capture lessons %}
+<p>This project was unique in that it was the first time I used a ternary oporator in actual code, outside of an exercise. In order to get certain elements to layout I needed to add a specific style to every third element. I did this by seeing if the element index, divided by 3, had a remainder. This is how the ternery oporator works. If no remainder existed, I would add a class to the element with the needed styling.</p>
+{% endcapture %}
+
+{% include lessonslearned.html header="Lessons Learned" text=lessons %}

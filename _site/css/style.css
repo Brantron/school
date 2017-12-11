@@ -1,0 +1,48 @@
+body {
+  margin: 1rem;
+  background: #e9eaf3; }
+
+main {
+  background: #fff;
+  max-width: 60rem;
+  padding: 2rem 1rem;
+  margin: 0 auto;
+  min-height: 100vh; }
+
+nav a {
+  text-decoration: none; }
+nav li {
+  padding: 0 1rem; }
+  nav li:hover {
+    background: lightgrey; }
+nav > ul li {
+  display: inline;
+  position: relative; }
+nav .top ul {
+  display: none; }
+  @media (max-width: 400px) {
+    nav .top ul {
+      width: 100%; } }
+  @media (min-width: 401px) {
+    nav .top ul {
+      width: inherit; } }
+nav .top:hover ul {
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  background: white;
+  padding: 0;
+  width: 16rem;
+  top: 1rem; }
+  nav .top:hover ul li {
+    padding: 0.5rem;
+    display: block; }
+
+figure {
+  margin: 0 0 2rem;
+  max-width: 40rem; }
+
+img {
+  max-width: 100%;
+  padding: 1px;
+  border: 1px solid #021a40; }

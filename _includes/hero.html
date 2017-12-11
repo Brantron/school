@@ -1,0 +1,6 @@
+<h1>{{ page.title }}</h1>
+<figure>
+   <a href="{{ page.link }}">
+   <img src="../img/{{ page.title | remove: ' ' | downcase }}.jpeg"
+      alt="{{ page.description }}" height="{{ page.imageheight }}" width="{{ page.imagewidth }}"/>
+    </a>

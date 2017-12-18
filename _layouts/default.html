@@ -13,8 +13,10 @@
   <body>
     <main>
       {% include header.html -%}
-      {% include hero.html -%}
+      <div class="content">
+        {% include hero.html -%}
         {{- content -}}
+      </div>
     </main>
   </body>
 </html>

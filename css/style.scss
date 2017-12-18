@@ -4,26 +4,42 @@
 body {
   margin: 1rem;
   background: #e9eaf3;
+  counter-reset: section;
+}
+
+ul {
+  padding-left: 0;
+}
+
+h1, h2, h3, h4, h5, h6,li {
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 600;
 }
 
 main {
   background: #fff;
-  max-width: 40rem;
-  padding: 2rem 1rem;
+  max-width: 60rem;
   margin: 0 auto;
   min-height: 100vh;
 }
 
+.content {
+  padding: 0 2rem;
+}
+
 nav {
+  padding: 0.5rem;
+  background: #3F51B5;
   a {
+    color: #ffffffde;
     text-decoration: none;
   }
 
   li {
-    padding: 0 1rem;
-
+    color: #ffffffde;
+    padding: 0.5rem 1rem;
     &:hover {
-    background: lightgrey;
+      background: #2196F3;
     }
 
   }
@@ -31,9 +47,15 @@ nav {
   > ul li {
     display: inline;
     position: relative;
+
+    li::before {
+      padding-right: 0.7rem;
+      counter-increment: section;
+      content: counter(section);
+    }
   }
   .top {
-    ul {
+    ol {
       display: none;
       @media (max-width: 400px) {
         width: 100%;
@@ -43,18 +65,21 @@ nav {
       }
     }
     &:hover {
-      ul {
+      ol {
         display: inline-block;
         position: absolute;
         left: 0;
-        background: white;
+        background: #3F51B5;
         padding: 0;
-        width: 16rem;
-        top: 1rem;
+        width: 22rem;
+        top: 2rem;
 
         li {
           padding: 0.5rem;
           display: block;
+          &:hover {
+            background: #2196F3;
+          }
         }
       }
     }

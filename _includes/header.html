@@ -1,6 +1,11 @@
 <nav>
   <ul>
-    <li><a href="https://github.com/Brantron" alt="Brandon Lawrence's Github">My Github</a></li>
+    <li class="top">Contact
+      <ul>
+        <li><a href="https://github.com/Brantron" alt="Brandon Lawrence's Github">My Github</a></li>
+        <li><a href="mailto:bvbrandonbv@gmail.com" alt="Brandon Lawrence's Github">Email</a></li>
+     </ul>
+   </li>
    {% for item in site.top -%}
       <li><a href="{{ item.url }}" alt="{{ item.title }}">{{ item.title }}</a></li>
    {% endfor -%}

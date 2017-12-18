@@ -33,19 +33,19 @@ nav {
   nav > ul li {
     display: inline;
     position: relative; }
-    nav > ul li li::before {
+    nav > ul li ol li::before {
       padding-right: 0.7rem;
       counter-increment: section;
       content: counter(section); }
-  nav .top ol {
+  nav .top ol, nav .top ul {
     display: none; }
     @media (max-width: 400px) {
-      nav .top ol {
+      nav .top ol, nav .top ul {
         width: 100%; } }
     @media (min-width: 401px) {
-      nav .top ol {
+      nav .top ol, nav .top ul {
         width: inherit; } }
-  nav .top:hover ol {
+  nav .top:hover ol, nav .top:hover ul {
     display: inline-block;
     position: absolute;
     left: 0;
@@ -53,10 +53,10 @@ nav {
     padding: 0;
     width: 22rem;
     top: 2rem; }
-    nav .top:hover ol li {
+    nav .top:hover ol li, nav .top:hover ul li {
       padding: 0.5rem;
       display: block; }
-      nav .top:hover ol li:hover {
+      nav .top:hover ol li:hover, nav .top:hover ul li:hover {
         background: #2196F3; }
 
 figure {
